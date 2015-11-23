@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<link href="../css/common.css" rel="stylesheet">
+<link href="../css/delay.css" rel="stylesheet">
+<script>
+window.onload=window.onscroll=window.onresize=function (){
+	var aImg=document.querySelectorAll('img');
+	//alert(aImg.length);	
+	for(var i=0; i<aImg.length; i++)
+	{
+		var top=getPos(aImg[i]).top;
+		var clientHeight=document.documentElement.clientHeight;
+		var scrollTop=document.body.scrollTop || document.documentElement.scrollTop;
+		if(scrollTop+clientHeight>top)
+		{
+			aImg[i].src=aImg[i].getAttribute('_src');
+		}
+	}
+	
+	function getPos(obj)
+	{
+		var left=0;
+		var top=0;
+		while(obj)
+		{
+			left+=obj.offsetLeft;
+			top+=obj.offsetTop;
+			obj=obj.offsetParent;
+		}
+		return {'left':left,'top':top};
+	}
+};
+</script>
+</head>
+
+<body>
+	<ul class="list clearFix">
+    	<li><img _src="../images/works/yanchi/girl1.jpg"></li>
+        <li><img _src="../images/works/yanchi/girl2.jpg"></li>
+		<li><img _src="../images/works/yanchi/girl3.jpg"></li>
+        <li><img _src="../images/works/yanchi/girl4.jpg"></li>
+        <li><img _src="../images/works/yanchi/girl5.jpg"></li>
+        <li><img _src="../images/works/yanchi/girl6.jpg"></li>
+        <li><img _src="../images/works/yanchi/girl7.jpg"></li>
+        <li><img _src="../images/works/yanchi/girl8.jpg"></li>
+        <li><img _src="../images/works/yanchi/girl9.jpg"></li>
+        <li><img _src="../images/works/yanchi/girl10.jpg"></li>
+        <li><img _src="../images/works/yanchi/girl11.jpg"></li>
+        <li><img _src="../images/works/yanchi/girl12.jpg"></li>
+        <li><img _src="../images/works/yanchi/girl13.jpg"></li>
+        <li><img _src="../images/works/yanchi/girl14.jpg"></li>
+        <li><img _src="../images/works/yanchi/girl15.jpg"></li>
+        <li><img _src="../images/works/yanchi/girl16.jpg"></li>
+        <li><img _src="../images/works/yanchi/girl17.jpg"></li>
+        <li><img _src="../images/works/yanchi/girl18.jpg"></li>
+        <li><img _src="../images/works/yanchi/girl19.jpg"></li>
+        <li><img _src="../images/works/yanchi/girl20.jpg"></li>
+        <li><img _src="../images/works/yanchi/girl1.jpg"></li>
+        <li><img _src="../images/works/yanchi/girl2.jpg"></li>
+		<li><img _src="../images/works/yanchi/girl3.jpg"></li>
+        <li><img _src="../images/works/yanchi/girl4.jpg"></li>
+        <li><img _src="../images/works/yanchi/girl5.jpg"></li>
+        <li><img _src="../images/works/yanchi/girl6.jpg"></li>
+        <li><img _src="../images/works/yanchi/girl7.jpg"></li>
+        <li><img _src="../images/works/yanchi/girl8.jpg"></li>
+        <li><img _src="../images/works/yanchi/girl9.jpg"></li>
+        <li><img _src="../images/works/yanchi/girl10.jpg"></li>
+        <li><img _src="../images/works/yanchi/girl11.jpg"></li>
+        <li><img _src="../images/works/yanchi/girl12.jpg"></li>
+        <li><img _src="../images/works/yanchi/girl13.jpg"></li>
+        <li><img _src="../images/works/yanchi/girl14.jpg"></li>
+        <li><img _src="../images/works/yanchi/girl15.jpg"></li>
+        <li><img _src="../images/works/yanchi/girl16.jpg"></li>
+        <li><img _src="../images/works/yanchi/girl17.jpg"></li>
+        <li><img _src="../images/works/yanchi/girl18.jpg"></li>
+        <li><img _src="../images/works/yanchi/girl19.jpg"></li>
+        <li><img _src="../images/works/yanchi/girl20.jpg"></li>
+    </ul>
+</body>
+</html>

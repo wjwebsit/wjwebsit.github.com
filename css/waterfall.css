@@ -1,0 +1,10 @@
+@charset "utf-8";
+/* CSS Document */
+.box{ width:1033px; margin:30px auto; }
+.box ul{ width:236px; float:left; margin:10px; border:1px solid #eee; }
+.box ul li{ width:236px; margin:10px 0; }
+.box ul li img{ width:236px; }
+div{ text-align:center; }
+
+
+

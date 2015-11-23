@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>瀑布流</title>
+<link href="../css/waterfall.css" rel="stylesheet">
+<link href="../css/common.css" rel="stylesheet">
+<script>
+window.onload=function (){
+	var aTmp=document.querySelectorAll('ul');
+	var aUl=[];
+	for(var i=0; i<aTmp.length; i++)
+	{
+		aUl.push(aTmp[i]);
+	}
+	var n=0;
+	
+	function creatLi()
+	{
+		n++;
+		if(n>=6)
+		{
+			return false;
+		}
+		for(var i=0; i<20; i++)
+		{
+			var oLi=document.createElement('li');
+			oLi.innerHTML='<img src="../images/works/yanchi/girl'+rnd(1,20)+'.jpg"><div style="width:236px; height:'+rnd(50,80)+'px">文艺女青年</div>';
+			aUl.sort(function (ul1,ul2){
+				return ul1.offsetHeight-ul2.offsetHeight;
+			});
+			aUl[0].appendChild(oLi);
+			var oDiv=oLi.querySelector('div');
+			oDiv.style.lineHeight=oDiv.offsetHeight/2+'px';
+		}
+	}
+	function rnd(n,m)
+	{
+		return parseInt(Math.random()*(m-n)+n);
+	}
+	creatLi();
+	window.onscroll=function (){
+		var scrollTop=document.body.scrollTop || document.documentElement.scrollTop;
+		var clientHeight=document.documentElement.clientHeight;
+		var height=scrollTop+clientHeight;
+		if(document.body.offsetHeight-100<height)
+		{
+			creatLi();
+		}
+	};
+	
+};
+</script>
+</head>
+
+<body>
+<div class="box clearFix">
+	<ul></ul>
+    <ul></ul>
+    <ul></ul>
+    <ul></ul>
+</div>
+</body>
+</html>

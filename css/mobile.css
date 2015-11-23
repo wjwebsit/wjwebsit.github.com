@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 
-html,body{ background:url(../images/mobile/bg2.jpg) no-repeat; width:100%; height:100%; background-size:100% 100%; overflow:hidden; -opacity:0.6; }
+html,body{ background:url(../images/mobile/bg2.jpg) no-repeat; width:100%; height:100%; background-size:100% 100%; overflow:hidden; }
 
 .wrap{ width:80%; height:100%; margin:0 auto; position:relative; }
 
@@ -12,7 +12,7 @@ html,body{ background:url(../images/mobile/bg2.jpg) no-repeat; width:100%; heigh
 	to{ transform:perspective(800px) translateZ(-100px) rotateY(360deg); }	
 }
 
-.list li{ width:100%; height:100%; position:absolute; left:0; top:0; transform-style:preserve-3d; transform:perspective(800px) translateZ(-100px) rotateY(0deg); -animation:5s round linear; }
+.list li{ width:100%; height:100%; position:absolute; left:0; top:0; transform-style:preserve-3d; transform:perspective(800px) translateZ(-100px) rotateY(0deg); /*animation:5s round linear;*/ }
 .list li .pad{ background:url(../images/mobile/pad.png) no-repeat; width:250px; height:350px;  position:absolute; left:50%; margin-left:-125px; top:100px; transform:perspective(800px)  rotateY(0deg) rotateX(20deg);background-size:100% 100%; box-shadow:0 0 50px 20px #fff; }
 .list li .pad span{ background:url(../images/mobile/mobile0.jpg) no-repeat; width:210px; height:300px; position:absolute; left:50%; margin-left:-100px; top:25px; border-radius:10px; overflow:hidden; background-size:cover; }
 .list li .phone{ background:url(../images/mobile/phone.png) no-repeat; width:200px; height:300px; position:absolute; left:50%; margin-left:-100px; top:180px; background-size:100% 100%; transform:perspective(800px) translateZ(-100px) rotateY(180deg) rotateX(20deg); box-shadow:0 0 50px 20px #fff; backface-visibility:none; }

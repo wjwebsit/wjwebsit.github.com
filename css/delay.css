@@ -1,0 +1,8 @@
+@charset "utf-8";
+/* CSS Document */
+.list{ width:1032px; margin:30px auto; }
+.list li{ width:236px; height:354px; float:left; margin:10px; border:1px solid #eee; }
+img{ display:block; width:236px; }
+
+
+

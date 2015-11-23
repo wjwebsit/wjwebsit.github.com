@@ -55,16 +55,16 @@ window.onload=function (){
 	var oLtit=document.querySelector('.positive .instruction h2');
 	var oRtit=document.querySelector('.reverse .instruction h2');	
 	var arr=[
-		{'name':'ABOUT','href':''},
+		{'name':'ABOUT','href':'./html/about.html'},
 		{'name':'WORKS','href':'./html/w-works.html'},
 		{'name':'MOBILES','href':'./html/mobile.html'},
-		{'name':'CONTACT US','href':''}
+		{'name':'CONTACT US','href':'./html/conect.html'}
 	];
 	var arr2=[
 		{'name':'MOBILES','href':'./html/mobile.html'},
-		{'name':'CONTACT US','href':''},
+		{'name':'CONTACT US','href':'./html/conect.html'},
 		{'name':'WORKS','href':'./html/w-works.html'},
-		{'name':'ABOUT','href':''}
+		{'name':'ABOUT','href':'./html/about.html'}
 	];
 	
 	var iNow=0;
