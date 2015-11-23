@@ -1,0 +1,94 @@
+@charset "utf-8";
+/* CSS Document */
+.banner{width:100%; height:100%; position:relative;}
+.banner li{width:1600px;margin-left:-800px; position:absolute; left:50%; top:0; }
+.banner img{ height:600px;  }
+.banner li{display:none; position:relative;}
+.banner .show{display:block;}
+
+.banner_btn {position:absolute; left:50%; bottom:20px; margin-left:-160px;}
+.banner_btn a{width:12px; height:12px; display:block; background:rgba(255,255,255,0.5); margin-right:24px; border-radius:5px;}
+.banner_btn .active{background:#9ebc14;}
+.banner_pos{width:572px; height:200px;position:absolute; left:280px; bottom:70px;}
+.banner_pos .banner_bg{width:572px; height:200px; background:rgba(255,255,255,0.3); }
+.banner_pos .banner_pos_txt{position:absolute; left:0px; top:0px; color:#fff;margin:20px 35px 0 39px;}
+.banner_pos .banner_pos_txt h2{font-size:36px;}
+.banner_pos .banner_pos_txt p{font-size:12px; line-height:24px; margin-top:10px;}
+
+.tit{margin:20px 19px 10px;}
+.mt60{margin-top:60px;}
+.tit_left .tit_left_pic1{background:url(../images/ico_index.png) no-repeat 0 -45px; width:120px; height:40px; text-indent:-9999em;}
+.tit_left .tit_left_pic2{background:url(../images/ico_index.png) no-repeat 0 -92px; width:137px; height:40px; text-indent:-9999em;}
+.tit_left .tit_left_pic3{background:url(../images/ico_index.png) no-repeat 0 -138px; width:169px; height:57px; text-indent:-9999em;}
+.tit_left .tit_left_pic4{background:url(../images/ico_index.png) no-repeat 0 -230px; width:137px; height:40px; text-indent:-9999em;}
+.tit_left .tit_left_pic5{background:url(../images/ico_index.png) no-repeat 0 -276px; width:137px; height:40px; text-indent:-9999em;}
+.tit_left .tit_left_pic6{background:url(../images/ico_index.png) no-repeat 0 -322px; width:137px; height:40px; text-indent:-9999em;}
+.tit_left .tit_left_pic7{background:url(../images/ico_index.png) no-repeat 0 -507px; width:137px; height:40px; text-indent:-9999em;}
+.tit_left .tit_left_pic8{background:url(../images/ico_index.png) no-repeat 0 -92px; width:137px; height:40px; text-indent:-9999em;}
+.tit_left .tit_left_pic9{background:url(../images/ico_index.png) no-repeat 0 -369px; width:147px; height:40px; text-indent:-9999em;}
+.tit_left .tit_left_pic10{background:url(../images/ico_index.png) no-repeat 0 -598px; width:147px; height:40px; text-indent:-9999em;}
+.tit_right{ overflow:hidden;}
+.tit_right ul{margin-top:18px; width:330px; margin-right:-1px;}
+.tit_right li{border-right:1px dotted #bdbdbd; font-size:12px;padding:5px 5px; }
+.tit_right li a{ color:#666; margin:0 10px; }
+.tit_right .active{background:#669900; border-radius:3px;}
+.tit_right .active a{ color:#fff;}
+
+.cont{margin-left:20px; display:none;}
+.show{display:block;}
+.cont_left_box{width:474px; height:279px; border:1px solid #f2f2f2; margin-right:20px;}
+.cont_left_box:hover{border:1px solid #690;}
+.cont_left{width:472px; height:277px; border:1px solid #e8e8e8; background:#fff;}
+.w718{width:718px;}
+.cont_left .w468{width:468px;}
+.cont_left_text{width:220px;background:#fff; padding:15px 15px;}
+.cont_left_text_tit{font-size:18px; color:#333; line-height:30px;}
+.cont_left_cont{font-size:12px; color:#666; line-height:20px;}
+.cont_left a img{margin:2px 0 0 2px;}
+
+.cont_right ul{width:482px;}
+.cont_right .w493{width:493px;}
+.cont_right .w236{width:236px;}
+.cont_right li{width:226px; margin-right:20px; margin-bottom:17px; position:relative;}
+.cont_right .mr10{margin-right:10px;}
+.cont_right li:hover .cont_right_pos{display:block;}
+.cont_right_box{width:224px; height:128px; border:1px solid #e8e8e8; position:relative;}
+.cont_right_box img{margin:2px 0 0 2px; width:220px; height:124px;}
+.cont_right_text_pos{width:212px;padding-left:12px;position:absolute; left:2px; bottom:6px; color:#fff; font-size:12px;}
+.cont_right_text_pos_bg{background:url(../images/index_play_bg.png) no-repeat; position:absolute; left:0; bottom:0; width:220px; height:124px;}
+.cont_right_text_pos p{line-height:18px;}
+.cont_right_pos{width:226px; height:276px;border:1px solid #690; display:none;position:absolute; left:0; top:0; z-index:3; color:#929872; font-size:14px;}
+.cont_right_text_pos .ccf9{color:#cf9;}
+.cont_right_pos_top{width:224px; height:101px; padding-top:25px;}
+.cont_right_pos_top i{background:url(../images/ico_play_718.png) no-repeat -4px -3px; width:53px; height:53px;margin-left:86px; display:block;}
+.cont_right_pos_top b{background:url(../images/ico20_1113.png) no-repeat 0-1682px; width:18px; height:18px;margin:25px 0 0 200px; display:block;}
+.cont_right_pos_tit{width:216px; height:54px; background:#fff; padding-left:8px; color:#ccc;}
+.cont_right_pos_tit p{line-height:24px;}
+.cont_right_pos_describe{width:224px; height:78px; background:#f6f9f2;}
+
+.cont_right_pos_tit .name i{background:url(../images/ico20_1113.png) no-repeat 0 -100px; width:11px; height:11px; margin-right:3px; margin-top:4px;}
+.cont_right_pos_tit .name span{margin-right:3px;}
+.cont_right_pos_tit .name b{background:url(../images/ico20_1113.png) no-repeat 0 -120px; width:11px; height:11px; margin-top:4px;}
+
+.cont_right_pos_tit .evaluation i{background:url(../images/ico20_1113.png) no-repeat 0 0; width:14px; height:14px; margin-right:3px; margin-top:6px;}
+.cont_right_pos_tit .evaluation span{margin-right:15px;}
+.cont_right_pos_tit .evaluation b{background:url(../images/ico20_1113.png) no-repeat 0 -20px; width:14px; height:14px; margin-right:3px; margin-top:6px;}
+.cont_right_pos_describe{padding-top:15px;}
+.cont_right_pos_dtext{margin-left:10px;}
+
+.cont_right .link_list{background:#fff; width:224px; border:1px solid #e8e8e8; border-top:none; border-bottom:none;}
+.cont_right .link_list a{height:30px; line-height:30px; border-bottom:1px solid #e8e8e8; color:#333; display:block; font-size:12px; padding-left:16px;}
+.cont_right .link_list a:hover{background:#f2f2f2; color:#690;}
+
+.cont1 li{width:226px; height:286px; border:1px solid #f2f2f2; position:relative; margin-right:22px;}
+.cont1 li:hover{border:1px solid #690;}
+.cont1_box{width:224px; height:284px; border:1px solid #e8e8e8;}
+.cont1_box_img{margin:2px 2px;}
+.cont1_box_simg{width:40px; height:40px; padding:2px 2px; border:1px solid #ccc; position:absolute; left:10px; bottom:42px;}
+.cont1_box_tit{font-size:12px; color:#c00; position:absolute; left:66px; bottom:45px;}
+.cont1_box_txt {font-size:12px; margin-top:36px; margin-left:18px;}
+.cont1_box_txt a{ color:#333;}
+.cont1_box_txt a:hover{color:#690;}
+
+.footer_box{font-size:24px; color:#666; height:125px; text-align:center; line-height:125px; font-weight:bold;}
+.footer_box span{color:#690;}

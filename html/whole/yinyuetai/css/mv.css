@@ -1,0 +1,70 @@
+@charset "utf-8";
+/* CSS Document */
+
+.cont_box{width:990px; background:#fff; border-radius:5px; padding-left:10px; }
+.cont{margin-right:5px;}
+.cont_tit{height:56px; padding-top:43px;}
+.cont_tit h2{  height:44px; text-indent:-9999em;}
+.cont_tit h3{color:#363; font-size:18px; margin-bottom:17px;}
+.cont_tit p{width:266px; height:1px; background:#ccc; margin-bottom:1px;}
+.cont_tit_pic1{background:url(../images/sprite.png) no-repeat 0 -161px; width:191px;}
+.cont_tit_pic2{background:url(../images/sprite.png) no-repeat 0 -204px; width:191px;}
+.cont_tit_pic3{background:url(../images/sprite.png) no-repeat -1px -247px; width:191px;}
+.cont_tit_pic4{background:url(../images/sprite.png) no-repeat -1px -290px; width:191px;}
+.cont_tit_pic5{background:url(../images/sprite.png) no-repeat -1px -89px; width:165px;}
+.cont_tit_pic6{background:url(../images/sprite.png) no-repeat -1px -340px; width:86px;}
+.cont_tit_pic7{background:url(../images/sprite.png) no-repeat -87px -340px; width:87px;}
+.cont_tit_pic8{background:url(../images/sprite.png) no-repeat -173px -340px; width:87px;}
+.cont_tit_pic9{background:url(../images/sprite.png) no-repeat -1px -384px; width:72px;}
+.cont_tit_pic10{background:url(../images/sprite.png) no-repeat -92px -384px; width:90px;}
+.cont_tit_pic11{background:url(../images/sprite.png) no-repeat -183px -384px; width:98px;}
+
+.cont_txt{width:321px; height:498px; border:1px solid #ebebeb;}
+.cont_txt .mb10{margin-bottom:10px;}
+.cont_txt_tit{ font-size:12px;width:110px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+.cont_txt_tit a{color:#333;}
+.cont_txt_name{font-size:12px;}
+.cont_txt_name a{ color:#690;}
+.cont_txt li{border-bottom:1px solid #f1f1f1; padding:12px 0 12px 17px;}
+.cont_txt li span{width:17px; text-align:center; font-size:12px;}
+.cont_txt .cont_txt_name a{margin-right:25px;}
+.cont_txt li i{background:url(../images/pic1.png) no-repeat; width:14px; height:14px; margin-right:15px;}
+.cont_txt_img{width:126px; height:71px; padding:3px 3px; border:1px solid #ccc; margin-top:-3px; margin-bottom:5px; margin-right:10px; position:relative;}
+.cont_txt_img img{width:126px; height:71px;}
+.cont_txt_img_pos{width:25px; height:25px; background:url(../images/pos_bg1.png) no-repeat;position:absolute; left:3px; top:3px; font-size:12px; color:#fff; text-align:center; line-height:25px;}
+.cont_txt_img_pos1{background:url(../images/pic1.png) no-repeat; position:absolute; right:-155px; bottom:0;width:14px; height:14px;}
+.cont_txt li img{border:1px solid #cecece; margin-right:10px;}
+.cont_txt_tit1{font-size:12px;color:#666; width:178px; margin-bottom:18px; margin-top:5px;}
+.cont_txt_cont{width:178px;}
+.cont_txt_tit1 h4{color:#690;}
+.cont_txt_tit1 b{ background:url(../images/sprite.png) no-repeat -167px -89px;  width:16px; height:16px; margin-right:6px;}
+.cont_txt .cont_txt_tit1 span{width:48px;}
+
+
+.cont_play{padding-left:26px; margin-top:10px;}
+.cont_play .play{background:url(../images/sprite.png) no-repeat 0 -133px; width:60px; height:27px; display:block; font-size:12px; color:#690; padding-left:51px; line-height:27px; }
+.cont_play .play:hover{background:url(../images/sprite.png) no-repeat -111px -133px;}
+.cont_play .more{font-size:12px; color:#666; margin-right:19px; margin-top:5px;}
+.cont_play .more:hover{background:#690; color:#fff;}
+
+.ml43{margin-left:43px;}
+.ml28{margin-left:28px;}
+.type{padding-left:43px; width:267px; margin-bottom:9px;}
+.type h4{font-size:12px; color:#9f9f9f; height:27px; background:url(../images/pic2.png) no-repeat left center; line-height:27px; padding-left:10px;}
+.type a{font-size:12px; color:#5e5d5d; margin:8px 6px 8px 0; padding:4px 4px 3px 5px;}
+.type a:hover{background:#690; color:#fff;}
+.cont .ml28 img{margin-bottom:8px;}
+
+.link_list{ line-height:27px; font-size:12px; border:1px solid #ebebeb; margin-top:-1px;}
+.link_list a{color:#666;}
+.link_list .spilt{background:url(../images/sprite.png) no-repeat -192px -88px; width:4px; height:4px;  margin-top:10px; margin-right:5px;}
+.link_list .play{background:url(../images/sprite.png) no-repeat -196px -88px; width:14px; height:14px;  margin-top:5px; margin-right:8px;}
+.link_list .add{background:url(../images/sprite.png) no-repeat -210px -88px; width:15px; height:14px;  margin-top:5px; margin-right:12px;}
+
+
+
+
+
+
+
+

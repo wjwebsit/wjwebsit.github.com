@@ -1,0 +1,10 @@
+@charset "utf-8";
+/* CSS Document */
+
+.tit{margin-top:30px; margin-bottom:34px;}
+.tit h2{font-size:22px; color:#690; font-weight:normal;}
+.tit_right_box{width:264px; overflow:hidden;}
+.tit_right{margin-top:9px; width:265px; margin-left:-1px;}
+.tit_right a{font-size:16px; color:#666; padding:0 16px; border-left:1px dotted #7f7f7f; }
+.tit_right .a_box{height:27px;}
+.tit_right .active{border-bottom:2px solid #690;}

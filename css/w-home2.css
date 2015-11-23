@@ -1,0 +1,98 @@
+@charset "utf-8";
+/* CSS Document */
+
+html,body{ height:100%; overflow:hidden; }
+.box{ height:100%; width:100%; -background:#FFC; margin:0 auto; position:relative; }
+
+.box .mask{ width:100%; height:100%; background:#fff; position:absolute; left:0; top:0; z-index:40; } 
+.box .mask h1{ background:url(../images/logo.png) no-repeat; width:340px; height:80px; position:absolute; left:50px; top:50px; }
+.box .mask ul{ position:absolute; left:50%; margin-left:-300px; top:50%; margin-top:-40px; width:600px; height:80px; }
+.box .mask ul li{ float:left; margin-right:10px; }
+
+
+/*---主内容部分---*/
+@-webkit-keyframes come{
+	to{ width:50%; }	
+}
+@-webkit-keyframes come2{
+	to{ height:100%; }	
+}
+.box .box-left{ width:0; height:100%; position:relative; z-index:2; -webkit-animation:1s come ease-in-out forwards 2s; }
+.box .box-right{width:50%; height:0;  position:relative; z-index:2; -webkit-animation:1s come2 ease-out forwards 2s; }
+.box-left .positive{ width:100%; height:100%; position:relative; overflow:hidden; }
+.box-left .positive ul{ width:100%; height:500%; position:absolute; left:0; top:0; transition:1s all ease; }
+.box-left .positive ul li{ width:100%; position:absolute; left:0; top:0; }
+/*.box-left .positive ul li a{ width:100%; height:100%; position:absolute; left:0; top:0; background:#000;}
+*/.box-left .positive ul li img{ width:100%;  background-size:100%; }
+
+/*#left-list li{ display:none; }
+#left-list li.active{ display:block; }
+*/
+
+/*.box-left #shadow1{ width:100%; height:100%; background:rgba(0,0,0,.2); filter:alpha(opacity=20); position:absolute; left:0; top:0; }
+.box-right #shadow2{ width:100%; height:100%; background:rgba(0,0,0,.2); filter:alpha(opacity=20); position:absolute; left:0; top:0; }
+*/
+
+.box-right .reverse{ width:100%; height:100%; position:relative; }
+.box-right .reverse ul{ width:100%; height:100%; }
+.box-right .reverse ul li{ width:100%; height:100%; position:relative; }
+
+.box-right .reverse ul li img{ width:100%; height:100%; }
+#right-list li{ display:none; }
+#right-list li.active{ display:block; }
+
+
+.box-left .instruction{ width:160px; height:110px; position:absolute; left:50%; margin-left:-120px; bottom:200px; text-align:center; }
+.box-left .instruction h2{ font-size:24px; font-weight:bold; font-family:微软雅黑; color:#F00; text-shadow:2px 2px 5px #000; amargin-bottom:26px; }
+.box-left .instruction a{ font-weight:bold; font-family:微软雅黑; font-size:60px; color:#F00; text-shadow:2px 2px 5px #000; }
+
+/*.box-left .positive .shadow{ width:100%; height:100%; background:#fff; opacity:0; position:absolute; left:0; top:0; }
+.box-right .reverse .shadow{ width:100%; height:100%; background:#fff; opacity:0; position:absolute; left:0; top:0; }
+*/
+.box-right .instruction{ width:160px; height:110px; position:absolute; right:50%; margin-right:-120px; bottom:200px; text-align:center; }
+.box-right .instruction h2{ font-size:24px; font-weight:bold; font-family:微软雅黑; color:#00F; text-shadow:2px 2px 5px #000; amargin-bottom:26px; }
+.box-right .instruction a{ font-weight:bold; font-family:微软雅黑; font-size:60px; color:#00F; text-shadow:2px 2px 5px #000; }
+
+
+/*@-webkit-keyframes shadow{
+	0%{ opacity:0; }
+	50%{ opacity:0.5; }
+	100%{ opacity:0; }	
+}
+.box-left:hover .positive .shadow{ -webkit-animation:.8s shadow linear; }
+.box-right:hover .reverse .shadow{ -webkit-animation:.8s shadow linear; }
+*/
+/*---时钟开始---*/
+@-webkit-keyframes round{
+	0%{ opacity:0; transform:rotate(0deg) scale(0.5);}	
+	50%{ opacity:.5; transform:rotate(180deg) scale(1.5);}
+	100%{ opacity:1; transform:rotate(360deg) scale(1); } 
+}
+.box .time{ opacity:0; width:564px; height:568px; position:fixed; left:50%; margin-left:-282px; top:10px; z-index:16; background:url(../images/commonSprites.png) no-repeat -28px -32px; -webkit-animation:1.5s round ease-in forwards 2s; } 
+
+/*---时针---*/
+
+.box .time .t1{ width:470px; height:470px; position:absolute; left:33px; top:35px; border-radius:50%; }
+.box .time .t1 i{ width:10px; height:10px; border:6px solid #fff; position:absolute; left:50%; margin-left:-5px; top:-10px; border-radius:50%; background:#29abe2; } 
+
+/*---分针---*/
+.box .time .t2{ width:530px; height:530px; position:absolute; left:3px; top:3px; border-radius:50%; }
+.box .time .t2 i{ width:10px; height:10px; border:6px solid #fff; position:absolute; left:50%; margin-left:-5px; top:-10px; border-radius:50%; background:#ed1c24; } 
+
+
+.time .exhibition{ width:422px; height:422px; background:url(../images/commonSprites.png) no-repeat -602px 0; position:absolute; left:60px; top:60px; }
+.time .exhibition span{ position:absolute; left:50%; top:40px; width:260px; height:50px; text-align:center; font-size:40px; font-weight:bold; color:#09C; font-family:alex-brush; margin-left:-130px; }
+/*---时钟结束---*/ 
+
+/*---尾部开始---*/
+footer{ width:100%; height:100px; z-index:6; position:fixed; bottom:0; left:0; z-index:20; }
+footer .btn{ width:100px; height:100px; background:#ebebeb; position:absolute; left:0; bottom:0; text-align:center; line-height:100px; z-index:20; }
+footer .btn b{ display:inline-block; background:url(../images/home-btn.png) no-repeat; width:20px; height:20px; }
+
+/*---导航----*/
+footer .nav{ height:100px; width:calc(100% - 100px); background:#fff; position:absolute; left:100px; top:0; transition:1s all ease; z-index:15; }
+footer .nav ul{ width:900px; height:24px; margin-top:30px; margin-left:100px; }
+footer .nav ul li{ width:180px; font-size:24px; height:100%; float:left; }
+footer .nav ul li a{ background:url(../images/round.png) no-repeat left center; background-size:16px; padding-left:30px; color:#333; } 
+footer .nav ul li:hover a{ background:url(../images/round1.png) no-repeat left center; color:#b5b5b5; }
+/*---导航----*/

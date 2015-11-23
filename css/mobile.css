@@ -1,0 +1,36 @@
+@charset "utf-8";
+/* CSS Document */
+
+html,body{ background:url(../images/mobile/bg2.jpg) no-repeat; width:100%; height:100%; background-size:100% 100%; overflow:hidden; -opacity:0.6; }
+
+.wrap{ width:80%; height:100%; margin:0 auto; position:relative; }
+
+
+.list{ width:500px; height:500px; position:absolute; left:50%; margin-left:-250px; top:80px; transform-style:preserve-3d; }
+
+@keyframes round{
+	to{ transform:perspective(800px) translateZ(-100px) rotateY(360deg); }	
+}
+
+.list li{ width:100%; height:100%; position:absolute; left:0; top:0; transform-style:preserve-3d; transform:perspective(800px) translateZ(-100px) rotateY(0deg); -animation:5s round linear; }
+.list li .pad{ background:url(../images/mobile/pad.png) no-repeat; width:250px; height:350px;  position:absolute; left:50%; margin-left:-125px; top:100px; transform:perspective(800px)  rotateY(0deg) rotateX(20deg);background-size:100% 100%; box-shadow:0 0 50px 20px #fff; }
+.list li .pad span{ background:url(../images/mobile/mobile0.jpg) no-repeat; width:210px; height:300px; position:absolute; left:50%; margin-left:-100px; top:25px; border-radius:10px; overflow:hidden; background-size:cover; }
+.list li .phone{ background:url(../images/mobile/phone.png) no-repeat; width:200px; height:300px; position:absolute; left:50%; margin-left:-100px; top:180px; background-size:100% 100%; transform:perspective(800px) translateZ(-100px) rotateY(180deg) rotateX(20deg); box-shadow:0 0 50px 20px #fff; backface-visibility:none; }
+.list li .phone span{ background:url(../images/mobile/mobile0.jpg) no-repeat; width:175px; height:229px; position:absolute; left:50%; margin-left:-87px; top:37px; border-radius:3px; overflow:hidden; background-size:cover; }
+
+.whole{ width:200px; height:200px; background:url(../images/mobile/icon1.jpg) no-repeat; position:absolute; left:-10px; top:50px; background-size:contain; transition:2s all ease; text-align:center; line-height:200px; font-size:30px; color:rgba(255,255,255,.6); text-shadow:2px 0 5px #fff; font-weight:bold; }
+.whole:hover{ transform:rotate(360deg); }
+
+@keyframes go{
+	to{ left:0; }	
+}
+
+input{ width:160px; height:40px; font-size:18px; font-family:微软雅黑; position:absolute; left:-300px; background:-webkit-linear-gradient(#000,#ccc); color:#fff; cursor:pointer; transition:1s all linear; }
+.btn1{ top:300px; }
+.btn2{ top:380px; }
+.btn3{ top:460px; }
+.btn4{ top:540px; }
+
+
+
+

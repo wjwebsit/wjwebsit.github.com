@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>智能社-http://www.zhinengshe.com</title>
+<style>
+*{ margin:0; padding:0; list-style:none;}
+html,body{ overflow:hidden; height:100%; width:100%; background:url(../images/works/html/bg2.jpg) no-repeat; background-size:100% 100%;  }
+#box{ width:500px; height:350px; background:url(../images/works/html/bz1.jpg) no-repeat; margin:120px auto; position:relative; box-shadow:0 0 50px 10px #fff; background-size:500px 350px; }
+/*#box span{ width:50px; height:50px; background:rgba(255,255,255,.3); position:absolute; }
+*/
+
+#box span{ width:50px; height:50px; background:url(../images/works/html/bz0.jpg) no-repeat; position:absolute; cursor:pointer; }
+</style>
+<script>
+function rnd(n,m){
+	return parseInt(Math.random()*(m-n)+n);
+}
+window.onload=function(){
+	var oBox=document.querySelector('#box');	
+	
+	var R=7;
+	var C=10;
+	for(var r=0; r<R; r++){
+		for(var c=0; c<C; c++){
+			var oSpan=document.createElement('span');
+			oSpan.style.width=oBox.offsetWidth/C+'px';
+			oSpan.style.height=oBox.offsetHeight/R+'px';
+			oBox.appendChild(oSpan);
+			
+			oSpan.style.left=c*oSpan.offsetWidth+'px';
+			oSpan.style.top=r*oSpan.offsetHeight+'px';
+			oSpan.style.backgroundPosition='-'+c*oSpan.offsetWidth+'px -'+r*oSpan.offsetHeight+'px';
+		}
+	}
+	
+	//
+	var iNow=0;
+	var bReady=true;
+	oBox.onclick=function(){
+		if(bReady==false)return;
+		bReady=false;
+		
+		iNow++;
+		
+		var aSpan=oBox.children;
+		
+		for(var i=0; i<aSpan.length; i++){
+			aSpan[i].style.transition='1s all ease';
+			var x=aSpan[i].offsetLeft+aSpan[i].offsetWidth/2-oBox.offsetWidth/2;
+			var y=aSpan[i].offsetTop+aSpan[i].offsetHeight/2-oBox.offsetHeight/2;
+			
+			aSpan[i].style.transform='translate3d('+x+'px,'+y+'px,100px) rotateX('+rnd(0,180)+'deg) rotateY('+rnd(0,180)+'deg)';
+			aSpan[i].style.opacity=0;
+		}
+		
+		aSpan[0].addEventListener('transitionend',function(){
+			bReady=true;
+			for(var i=0; i<aSpan.length; i++){
+				aSpan[i].style.transition='none';
+				aSpan[i].style.transform='translate3d(0px,0px,100px) rotateX(0deg) rotateY(0deg)';
+				aSpan[i].style.opacity=1;
+				aSpan[i].style.backgroundImage='url(../images/works/html/bz'+iNow%4+'.jpg)';
+				oBox.style.background='url(../images/works/html/bz'+(iNow+1)%4+'.jpg)';
+			}
+		},false);	
+	};
+};
+</script>
+</head>
+
+<body>
+<div id="box"></div>
+</body>
+</html>

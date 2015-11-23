@@ -1,0 +1,985 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>蒙娜丽莎</title>
+<link href="css/common.css" rel="stylesheet" />
+<link href="css/index.css" rel="stylesheet" />
+<script src="js/jquery-1.7.2.js"></script>
+<script>
+	$(function(){
+		$('.banner_btn a').mouseover(function(){
+			$('.banner_btn a').removeClass('active');
+			$(this).addClass('active');
+			$('.banner_img a').hide();
+			$('.banner_img a').eq($(this).index()).show();
+		});
+	});
+</script>
+</head>
+
+<body>
+	<div class="header">
+    	<div class="logo wrap">
+        	<h1>蒙娜丽莎</h1>
+            <div class="logo_pos"></div>
+        </div>
+    </div>
+    <div class="nav_b">
+        <div class="nav_box">
+            <div class="nav">
+                <div class="wrap clearFix">
+                    <ul class=" fl clearFix">
+                        <li class="fl">
+                            <a href="javascript:;" class="active">首 页</a>
+                        </li>
+                        <li class="fl">
+                            <a href="javascript:;">影楼报价</a>
+                        </li>
+                        <li class="fl">
+                            <a href="javascript:;">作品展示</a>
+                        </li>
+                        <li class="fl">
+                            <a href="javascript:;">场馆介绍</a>
+                        </li>
+                        <li class="fl">
+                            <a href="javascript:;">客片欣赏</a>
+                        </li>
+                        <li class="fl">
+                            <a href="javascript:;">积分商城</a>
+                        </li>
+                        <li class="fl">
+                            <a href="javascript:;">官方汇款</a>
+                        </li>
+                        <li class="fl">
+                            <a href="javascript:;">网上预约</a>
+                        </li>
+                        <li class="fl">
+                            <a href="javascript:;">官方微博</a>
+                        </li>
+                    </ul>
+                    <div class="collect fr"><a href="javascript:;">收藏</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="banner">
+    	<div class="banner_img">
+            <a href="javascript:;" class="show"><img src="images/2015-07-24-16-13-09.jpg" alt="" /></a>
+            <a href="javascript:;"><img src="images/2014-05-01-10-31-56.jpg" alt="" /></a>
+            <a href="javascript:;"><img src="images/2014-08-01-13-31-59.jpg" alt="" /></a>
+            <a href="javascript:;"><img src="images/2014-08-14-12-13-01.jpg" alt="" /></a>
+        </div>
+        <div class="banner_btn clearFix">
+        	<a href="javascript:;" class="fl active"></a>
+            <a href="javascript:;" class="fl"></a>
+            <a href="javascript:;" class="fl"></a>
+            <a href="javascript:;" class="fl"></a>
+        </div>
+    </div>
+    <div class="wrap">
+        <div class="online">
+            <img src="images/online.gif" alt="" />
+            <div class="online_pos clearFix">
+            	<a href="javascript:;" class="fl online_pos_pic1"></a>
+                <a href="javascript:;" class="fl online_pos_pic2"></a>
+                <a href="javascript:;" class="fl online_pos_pic3"></a>
+                <a href="javascript:;" class="fl online_pos_pic4"></a>
+            </div>
+        </div>
+        <div class="subbanner">
+        	<ul class="clearFix">
+            	<li class="fl">
+                	<a href="javascript:;">
+                    	<img src="images/2014-11-03-16-19-29.jpg" alt="" />
+                    </a>
+                </li>
+                <li class="fl">
+                	<a href="javascript:;">
+                    	<img src="images/2014-05-29-12-05-25.jpg" alt="" />
+                    </a>
+                </li>
+                <li class="fl">
+                	<a href="javascript:;">
+                    	<img src="images/2014-11-03-16-18-57.jpg" alt="" />
+                    </a>
+                </li>
+            </ul>
+            <a href="javascript:;">
+            	<img src="images/banner.jpg" alt="" />
+            </a>
+        </div>
+        <div class="tit clearFix">
+        	<h2 class="fl titpic1">场馆介绍</h2>
+            <div class="subnav fr">
+            	<ul class="clearFix">
+                	<li class="fl"><a href="javascript:;">北京</a></li>
+                    <li class="fl"><a href="javascript:;">洛阳</a></li>
+                    <li class="fl"><a href="javascript:;">西安</a></li>
+                    <li class="fl"><a href="javascript:;">唐山</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="cont clearFix">
+        	<div class="cont_box show">
+                <div class="cont_left fl">
+                    <a href="javascript:;" class="show">
+                        <img src="images/2014-11-01-17-36-10.jpg" alt="" />
+                    </a>
+                    <a href="javascript:;">
+                        <img src="images/2014-11-01-17-36-10.jpg" alt="" />
+                    </a>
+                    <a href="javascript:;">
+                        <img src="images/2014-11-01-17-36-10.jpg" alt="" />
+                    </a>
+                    <a href="javascript:;">
+                        <img src="images/2014-11-01-17-36-10.jpg" alt="" />
+                    </a>
+                    <div class="prev"></div>
+                    <div class="next"></div>
+                    <div class="cont_left_pos">
+                        <div class="cont_left_bg"></div>
+                        <p>场馆包间</p>
+                    </div>
+                </div>
+                <div class="cont_right fl">
+                    <ul>
+                        <li class="fl">
+                            <a href="javascript:;">
+                                <img src="images/2014-11-01-17-26-23.jpg" alt="" />
+                                <p>曼谷乐园</p>
+                            </a>
+                        </li>
+                        <li class="fl">
+                            <a href="javascript:;">
+                                <img src="images/2014-11-01-17-30-11.jpg" alt="" />
+                                <p>曼谷乐园</p>
+                            </a>
+                        </li>
+                        <li class="fl">
+                            <a href="javascript:;">
+                                <img src="images/2014-11-01-17-40-57.jpg" alt="" />
+                                <p>曼谷乐园</p>
+                            </a>
+                        </li>
+                        <li class="fl">
+                            <a href="javascript:;">
+                                <img src="images/2014-11-01-17-43-05.jpg" alt="" />
+                                <p>曼谷乐园</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="cont_box">
+                <div class="cont_left fl">
+                    <a href="javascript:;" class="show">
+                        <img src="images/2014-11-01-17-36-10.jpg" alt="" />
+                    </a>
+                    <a href="javascript:;">
+                        <img src="images/2014-11-01-17-36-10.jpg" alt="" />
+                    </a>
+                    <a href="javascript:;">
+                        <img src="images/2014-11-01-17-36-10.jpg" alt="" />
+                    </a>
+                    <a href="javascript:;">
+                        <img src="images/2014-11-01-17-36-10.jpg" alt="" />
+                    </a>
+                    <div class="prev"></div>
+                    <div class="next"></div>
+                    <div class="cont_left_pos">
+                        <div class="cont_left_bg"></div>
+                        <p>场馆包间</p>
+                    </div>
+                </div>
+                <div class="cont_right fl">
+                    <ul>
+                        <li class="fl">
+                            <a href="javascript:;">
+                                <img src="images/2014-08-13-20-09-36.jpg" alt="" />
+                                <p>曼谷乐园</p>
+                            </a>
+                        </li>
+                        <li class="fl">
+                            <a href="javascript:;">
+                                <img src="images/2014-07-18-11-47-06.jpg" alt="" />
+                                <p>曼谷乐园</p>
+                            </a>
+                        </li>
+                        <li class="fl">
+                            <a href="javascript:;">
+                                <img src="images/2014-08-15-14-00-32.jpg" alt="" />
+                                <p>曼谷乐园</p>
+                            </a>
+                        </li>
+                        <li class="fl">
+                            <a href="javascript:;">
+                                <img src="images/2014-08-09-13-39-59.jpg" alt="" />
+                                <p>曼谷乐园</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="cont_box">
+                <div class="cont_left fl">
+                    <a href="javascript:;" class="show">
+                        <img src="images/2014-11-01-17-36-10.jpg" alt="" />
+                    </a>
+                    <a href="javascript:;">
+                        <img src="images/2014-11-01-17-36-10.jpg" alt="" />
+                    </a>
+                    <a href="javascript:;">
+                        <img src="images/2014-11-01-17-36-10.jpg" alt="" />
+                    </a>
+                    <a href="javascript:;">
+                        <img src="images/2014-11-01-17-36-10.jpg" alt="" />
+                    </a>
+                    <div class="prev"></div>
+                    <div class="next"></div>
+                    <div class="cont_left_pos">
+                        <div class="cont_left_bg"></div>
+                        <p>场馆包间</p>
+                    </div>
+                </div>
+                <div class="cont_right fl">
+                    <ul>
+                        <li class="fl">
+                            <a href="javascript:;">
+                                <img src="images/2014-08-13-20-09-36.jpg" alt="" />
+                                <p>曼谷乐园</p>
+                            </a>
+                        </li>
+                        <li class="fl">
+                            <a href="javascript:;">
+                                <img src="images/2014-07-18-11-47-06.jpg" alt="" />
+                                <p>曼谷乐园</p>
+                            </a>
+                        </li>
+                        <li class="fl">
+                            <a href="javascript:;">
+                                <img src="images/2014-08-15-14-00-32.jpg" alt="" />
+                                <p>曼谷乐园</p>
+                            </a>
+                        </li>
+                        <li class="fl">
+                            <a href="javascript:;">
+                                <img src="images/2014-08-09-13-39-59.jpg" alt="" />
+                                <p>曼谷乐园</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="cont_box">
+                <div class="cont_left fl">
+                    <a href="javascript:;" class="show">
+                        <img src="images/2014-11-01-17-36-10.jpg" alt="" />
+                    </a>
+                    <a href="javascript:;">
+                        <img src="images/2014-11-01-17-36-10.jpg" alt="" />
+                    </a>
+                    <a href="javascript:;">
+                        <img src="images/2014-11-01-17-36-10.jpg" alt="" />
+                    </a>
+                    <a href="javascript:;">
+                        <img src="images/2014-11-01-17-36-10.jpg" alt="" />
+                    </a>
+                    <div class="prev"></div>
+                    <div class="next"></div>
+                    <div class="cont_left_pos">
+                        <div class="cont_left_bg"></div>
+                        <p>场馆包间</p>
+                    </div>
+                </div>
+                <div class="cont_right fl">
+                    <ul>
+                        <li class="fl">
+                            <a href="javascript:;">
+                                <img src="images/2014-08-13-20-09-36.jpg" alt="" />
+                                <p>曼谷乐园</p>
+                            </a>
+                        </li>
+                        <li class="fl">
+                            <a href="javascript:;">
+                                <img src="images/2014-07-18-11-47-06.jpg" alt="" />
+                                <p>曼谷乐园</p>
+                            </a>
+                        </li>
+                        <li class="fl">
+                            <a href="javascript:;">
+                                <img src="images/2014-08-15-14-00-32.jpg" alt="" />
+                                <p>曼谷乐园</p>
+                            </a>
+                        </li>
+                        <li class="fl">
+                            <a href="javascript:;">
+                                <img src="images/2014-08-09-13-39-59.jpg" alt="" />
+                                <p>曼谷乐园</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="tit clearFix">
+        	<h2 class="fl titpic2">外景介绍</h2>
+            <div class="subnav fr">
+            	<ul class="clearFix">
+                	<li class="fl"><a href="javascript:;">北京</a></li>
+                    <li class="fl"><a href="javascript:;">洛阳</a></li>
+                    <li class="fl"><a href="javascript:;">西安</a></li>
+                    <li class="fl"><a href="javascript:;">唐山</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="cont clearFix">
+        	<div class="cont_box show">
+                <div class="cont_left fl">
+                    <a href="javascript:;" class="show">
+                        <img src="images/2014-08-15-14-02-54.jpg" alt="" />
+                    </a>
+                    <a href="javascript:;">
+                        <img src="images/2014-11-01-17-36-10.jpg" alt="" />
+                    </a>
+                    <a href="javascript:;">
+                        <img src="images/2014-11-01-17-36-10.jpg" alt="" />
+                    </a>
+                    <a href="javascript:;">
+                        <img src="images/2014-11-01-17-36-10.jpg" alt="" />
+                    </a>
+                    <div class="prev"></div>
+                    <div class="next"></div>
+                    <div class="cont_left_pos">
+                        <div class="cont_left_bg"></div>
+                        <p>场馆包间</p>
+                    </div>
+                </div>
+                <div class="cont_right fl">
+                    <ul>
+                        <li class="fl">
+                            <a href="javascript:;">
+                                <img src="images/2014-08-13-20-09-36.jpg" alt="" />
+                                <p>曼谷乐园</p>
+                            </a>
+                        </li>
+                        <li class="fl">
+                            <a href="javascript:;">
+                                <img src="images/2014-07-18-11-47-06.jpg" alt="" />
+                                <p>曼谷乐园</p>
+                            </a>
+                        </li>
+                        <li class="fl">
+                            <a href="javascript:;">
+                                <img src="images/2014-08-15-14-00-32.jpg" alt="" />
+                                <p>曼谷乐园</p>
+                            </a>
+                        </li>
+                        <li class="fl">
+                            <a href="javascript:;">
+                                <img src="images/2014-08-09-13-39-59.jpg" alt="" />
+                                <p>曼谷乐园</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="cont_box">
+                <div class="cont_left fl">
+                    <a href="javascript:;" class="show">
+                        <img src="images/2014-08-15-14-02-54.jpg" alt="" />
+                    </a>
+                    <a href="javascript:;">
+                        <img src="images/2014-11-01-17-36-10.jpg" alt="" />
+                    </a>
+                    <a href="javascript:;">
+                        <img src="images/2014-11-01-17-36-10.jpg" alt="" />
+                    </a>
+                    <a href="javascript:;">
+                        <img src="images/2014-11-01-17-36-10.jpg" alt="" />
+                    </a>
+                    <div class="prev"></div>
+                    <div class="next"></div>
+                    <div class="cont_left_pos">
+                        <div class="cont_left_bg"></div>
+                        <p>场馆包间</p>
+                    </div>
+                </div>
+                <div class="cont_right fl">
+                    <ul>
+                        <li class="fl">
+                            <a href="javascript:;">
+                                <img src="images/2014-08-13-20-09-36.jpg" alt="" />
+                                <p>曼谷乐园</p>
+                            </a>
+                        </li>
+                        <li class="fl">
+                            <a href="javascript:;">
+                                <img src="images/2014-07-18-11-47-06.jpg" alt="" />
+                                <p>曼谷乐园</p>
+                            </a>
+                        </li>
+                        <li class="fl">
+                            <a href="javascript:;">
+                                <img src="images/2014-08-15-14-00-32.jpg" alt="" />
+                                <p>曼谷乐园</p>
+                            </a>
+                        </li>
+                        <li class="fl">
+                            <a href="javascript:;">
+                                <img src="images/2014-08-09-13-39-59.jpg" alt="" />
+                                <p>曼谷乐园</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="cont_box">
+                <div class="cont_left fl">
+                    <a href="javascript:;" class="show">
+                        <img src="images/2014-08-15-14-02-54.jpg" alt="" />
+                    </a>
+                    <a href="javascript:;">
+                        <img src="images/2014-11-01-17-36-10.jpg" alt="" />
+                    </a>
+                    <a href="javascript:;">
+                        <img src="images/2014-11-01-17-36-10.jpg" alt="" />
+                    </a>
+                    <a href="javascript:;">
+                        <img src="images/2014-11-01-17-36-10.jpg" alt="" />
+                    </a>
+                    <div class="prev"></div>
+                    <div class="next"></div>
+                    <div class="cont_left_pos">
+                        <div class="cont_left_bg"></div>
+                        <p>场馆包间</p>
+                    </div>
+                </div>
+                <div class="cont_right fl">
+                    <ul>
+                        <li class="fl">
+                            <a href="javascript:;">
+                                <img src="images/2014-08-13-20-09-36.jpg" alt="" />
+                                <p>曼谷乐园</p>
+                            </a>
+                        </li>
+                        <li class="fl">
+                            <a href="javascript:;">
+                                <img src="images/2014-07-18-11-47-06.jpg" alt="" />
+                                <p>曼谷乐园</p>
+                            </a>
+                        </li>
+                        <li class="fl">
+                            <a href="javascript:;">
+                                <img src="images/2014-08-15-14-00-32.jpg" alt="" />
+                                <p>曼谷乐园</p>
+                            </a>
+                        </li>
+                        <li class="fl">
+                            <a href="javascript:;">
+                                <img src="images/2014-08-09-13-39-59.jpg" alt="" />
+                                <p>曼谷乐园</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="cont_box">
+                <div class="cont_left fl">
+                    <a href="javascript:;" class="show">
+                        <img src="images/2014-08-15-14-02-54.jpg" alt="" />
+                    </a>
+                    <a href="javascript:;">
+                        <img src="images/2014-11-01-17-36-10.jpg" alt="" />
+                    </a>
+                    <a href="javascript:;">
+                        <img src="images/2014-11-01-17-36-10.jpg" alt="" />
+                    </a>
+                    <a href="javascript:;">
+                        <img src="images/2014-11-01-17-36-10.jpg" alt="" />
+                    </a>
+                    <div class="prev"></div>
+                    <div class="next"></div>
+                    <div class="cont_left_pos">
+                        <div class="cont_left_bg"></div>
+                        <p>场馆包间</p>
+                    </div>
+                </div>
+                <div class="cont_right fl">
+                    <ul>
+                        <li class="fl">
+                            <a href="javascript:;">
+                                <img src="images/2014-08-13-20-09-36.jpg" alt="" />
+                                <p>曼谷乐园</p>
+                            </a>
+                        </li>
+                        <li class="fl">
+                            <a href="javascript:;">
+                                <img src="images/2014-07-18-11-47-06.jpg" alt="" />
+                                <p>曼谷乐园</p>
+                            </a>
+                        </li>
+                        <li class="fl">
+                            <a href="javascript:;">
+                                <img src="images/2014-08-15-14-00-32.jpg" alt="" />
+                                <p>曼谷乐园</p>
+                            </a>
+                        </li>
+                        <li class="fl">
+                            <a href="javascript:;">
+                                <img src="images/2014-08-09-13-39-59.jpg" alt="" />
+                                <p>曼谷乐园</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="tit clearFix">
+        	<h2 class="fl titpic3">客片欣赏</h2>
+            <div class="subnav fr">
+            	<ul class="clearFix">
+                	<li class="fl"><a href="javascript:;">北京</a></li>
+                    <li class="fl"><a href="javascript:;">洛阳</a></li>
+                    <li class="fl"><a href="javascript:;">西安</a></li>
+                    <li class="fl"><a href="javascript:;">唐山</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="linklist">
+        	<ul class="clearFix show">
+            	<li class="fl">
+                	<a href="javascript:;">
+                    	<img src="images/2014-05-23-12-30-08.jpg" alt="" />
+                     </a>
+                </li>
+            	<li class="fl">
+                	<a href="javascript:;">
+                    	<img src="images/2014-05-23-12-47-52.jpg" alt="" />
+                     </a>
+                </li>
+                <li class="fl">
+                	<a href="javascript:;">
+                    	<img src="images/2014-05-23-12-56-04.jpg" alt="" />
+                     </a>
+                </li>
+                <li class="fl">
+                	<a href="javascript:;">
+                    	<img src="images/2014-10-31-17-35-11.jpg" alt="" />
+                     </a>
+                </li>
+                <li class="fl">
+                	<a href="javascript:;">
+                    	<img src="images/2014-10-31-17-37-01.jpg" alt="" />
+                     </a>
+                </li>
+                <li class="fl">
+                	<a href="javascript:;">
+                    	<img src="images/2014-10-31-17-38-48.JPG" alt="" />
+                     </a>
+                </li>
+                <li class="fl">
+                	<a href="javascript:;">
+                    	<img src="images/2014-10-31-17-40-02.JPG" alt="" />
+                     </a>
+                </li>
+                <li class="fl">
+                	<a href="javascript:;">
+                    	<img src="images/2014-10-31-17-41-22.jpg" alt="" />
+                     </a>
+                </li>
+            </ul>
+            <ul class="clearFix">
+            	<li class="fl">
+                	<a href="javascript:;">
+                    	<img src="images/2014-05-23-12-30-08.jpg" alt="" />
+                     </a>
+                </li>
+            	<li class="fl">
+                	<a href="javascript:;">
+                    	<img src="images/2014-05-23-12-47-52.jpg" alt="" />
+                     </a>
+                </li>
+                <li class="fl">
+                	<a href="javascript:;">
+                    	<img src="images/2014-05-23-12-56-04.jpg" alt="" />
+                     </a>
+                </li>
+                <li class="fl">
+                	<a href="javascript:;">
+                    	<img src="images/2014-10-31-17-35-11.jpg" alt="" />
+                     </a>
+                </li>
+                <li class="fl">
+                	<a href="javascript:;">
+                    	<img src="images/2014-10-31-17-37-01.jpg" alt="" />
+                     </a>
+                </li>
+                <li class="fl">
+                	<a href="javascript:;">
+                    	<img src="images/2014-10-31-17-38-48.JPG" alt="" />
+                     </a>
+                </li>
+                <li class="fl">
+                	<a href="javascript:;">
+                    	<img src="images/2014-10-31-17-40-02.JPG" alt="" />
+                     </a>
+                </li>
+                <li class="fl">
+                	<a href="javascript:;">
+                    	<img src="images/2014-10-31-17-41-22.jpg" alt="" />
+                     </a>
+                </li>
+            </ul>
+            <ul class="clearFix">
+            	<li class="fl">
+                	<a href="javascript:;">
+                    	<img src="images/2014-05-23-12-30-08.jpg" alt="" />
+                     </a>
+                </li>
+            	<li class="fl">
+                	<a href="javascript:;">
+                    	<img src="images/2014-05-23-12-47-52.jpg" alt="" />
+                     </a>
+                </li>
+                <li class="fl">
+                	<a href="javascript:;">
+                    	<img src="images/2014-05-23-12-56-04.jpg" alt="" />
+                     </a>
+                </li>
+                <li class="fl">
+                	<a href="javascript:;">
+                    	<img src="images/2014-10-31-17-35-11.jpg" alt="" />
+                     </a>
+                </li>
+                <li class="fl">
+                	<a href="javascript:;">
+                    	<img src="images/2014-10-31-17-37-01.jpg" alt="" />
+                     </a>
+                </li>
+                <li class="fl">
+                	<a href="javascript:;">
+                    	<img src="images/2014-10-31-17-38-48.JPG" alt="" />
+                     </a>
+                </li>
+                <li class="fl">
+                	<a href="javascript:;">
+                    	<img src="images/2014-10-31-17-40-02.JPG" alt="" />
+                     </a>
+                </li>
+                <li class="fl">
+                	<a href="javascript:;">
+                    	<img src="images/2014-10-31-17-41-22.jpg" alt="" />
+                     </a>
+                </li>
+            </ul>
+            <ul class="clearFix">
+            	<li class="fl">
+                	<a href="javascript:;">
+                    	<img src="images/2014-05-23-12-30-08.jpg" alt="" />
+                     </a>
+                </li>
+            	<li class="fl">
+                	<a href="javascript:;">
+                    	<img src="images/2014-05-23-12-47-52.jpg" alt="" />
+                     </a>
+                </li>
+                <li class="fl">
+                	<a href="javascript:;">
+                    	<img src="images/2014-05-23-12-56-04.jpg" alt="" />
+                     </a>
+                </li>
+                <li class="fl">
+                	<a href="javascript:;">
+                    	<img src="images/2014-10-31-17-35-11.jpg" alt="" />
+                     </a>
+                </li>
+                <li class="fl">
+                	<a href="javascript:;">
+                    	<img src="images/2014-10-31-17-37-01.jpg" alt="" />
+                     </a>
+                </li>
+                <li class="fl">
+                	<a href="javascript:;">
+                    	<img src="images/2014-10-31-17-38-48.JPG" alt="" />
+                     </a>
+                </li>
+                <li class="fl">
+                	<a href="javascript:;">
+                    	<img src="images/2014-10-31-17-40-02.JPG" alt="" />
+                     </a>
+                </li>
+                <li class="fl">
+                	<a href="javascript:;">
+                    	<img src="images/2014-10-31-17-41-22.jpg" alt="" />
+                     </a>
+                </li>
+            </ul>
+        </div>
+		<div class="tit clearFix">
+        	<h2 class="fl titpic4">服务报价</h2>
+            <div class="subnav fr">
+            	<a href="javascript:;" class="fr">&gt;&gt; 更多报价</a>
+            </div>
+        </div>
+        <div class="server clearFix">
+        	<div class="server_left fl">
+            	<a href="javascript:;">
+                	<img src="images/2014-11-01-17-51-42.jpg" alt="" />
+                    <div class="server_left_txt clearFix">
+                    	<span class="fl">限量套系，超值团购，每日仅限3套</span>
+                        <b class="fr">RMB:4999元</b>
+                    </div>
+                </a>
+            </div>
+            <div class="server_right fl">
+            	<h3>蒙娜丽莎“克里斯汀会所</h3>
+                <p>1995年，中国和新加坡金尼影像合力打造的蒙娜丽莎在西安创立，凭借专业先进的摄影技术和贴心周到的服务，孕育出“美丽感动一生”的企业文化，成为婚纱摄影行业的领航者。短短几...
+北京婚纱摄影请选择蒙娜丽莎，贵族的品质和实在的价格让您不会错过它。如果你浏览了所有婚纱照您才会发现，蒙娜丽莎才是您一直在寻找的感觉！</p>
+				<p>
+到的服务，孕育出“美丽感动一生”的企业文化，成为婚纱摄影行业的领航者。短短几北京婚纱摄影请选择蒙娜丽莎，贵族的品质和实在的价格让您不会错过它。如果你浏览了所有婚纱照您才会发现，蒙娜丽莎才是您一直在寻找的感觉！</p>
+				<div class="server_more">
+            	<a href="javascript:;" class="fr">&gt;&gt; 详情介绍</a>
+            </div>
+            </div>
+            <div class="server_left fl">
+            	<a href="javascript:;">
+                	<img src="images/2014-11-01-17-56-49.jpg" alt="" />
+                    <div class="server_left_txt clearFix">
+                    	<span class="fl">限量套系，超值团购，每日仅限3套</span>
+                        <b class="fr">RMB:4999元</b>
+                    </div>
+                </a>
+            </div>
+            <div class="server_left fl">
+            	<a href="javascript:;">
+                	<img src="images/2014-11-01-17-53-05.jpg" alt="" />
+                    <div class="server_left_txt clearFix">
+                    	<span class="fl">限量套系，超值团购，每日仅限3套</span>
+                        <b class="fr">RMB:4999元</b>
+                    </div>
+                </a>
+            </div>
+            <div class="server_left fl mr0">
+            	<a href="javascript:;">
+                	<img src="images/2013-06-06-16-35-45.jpg" alt="" />
+                    <div class="server_left_txt clearFix">
+                    	<span class="fl">限量套系，超值团购，每日仅限3套</span>
+                        <b class="fr">RMB:4999元</b>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="tit clearFix">
+        	<h2 class="fl titpic5">积分商城</h2>
+            <h2 class="fl titpic6">官方微博</h2>
+            <h2 class="fl titpic7">服务小贴士</h2>
+        </div>
+        <div class="footerbanner clearFix">
+        	<ul class="fl clearFix footerbanner_left">
+            	<li class="fl">
+                	<a href="javascript:;">
+                    	<img src="images/2013-06-07-10-16-02.jpg" alt="" />
+                        <p>Chanel 香奈儿 No5女士香水 50ml</p>
+                    </a>
+                </li>
+                <li class="fl">
+                	<a href="javascript:;">
+                    	<img src="images/2013-06-06-16-44-48.jpg" alt="" />
+                        <p>Chanel 香奈儿 No5女士香水 50ml</p>
+                    </a>
+                </li>
+                <li class="fl">
+                	<a href="javascript:;">
+                    	<img src="images/2013-06-06-17-23-13.jpg" alt="" />
+                        <p>Chanel 香奈儿 No5女士香水 50ml</p>
+                    </a>
+                </li>
+                <li class="fl">
+                	<a href="javascript:;">
+                    	<img src="images/2013-06-06-17-24-19.jpg" alt="" />
+                        <p>Chanel 香奈儿 No5女士香水 50ml</p>
+                    </a>
+                </li>
+                <li class="fl">
+                	<a href="javascript:;">
+                    	<img src="images/2013-06-06-17-26-55.jpg" alt="" />
+                        <p>Chanel 香奈儿 No5女士香水 50ml</p>
+                    </a>
+                </li>
+                <li class="fl">
+                	<a href="javascript:;">
+                    	<img src="images/2013-06-06-17-29-23.jpg" alt="" />
+                        <p>Chanel 香奈儿 No5女士香水 50ml</p>
+                    </a>
+                </li>
+            </ul>
+            <div class="footerbanne_center fl">
+            	<div class="top clearFix">
+                	<a href="javascript:;" class="fl">
+                    	<img src="images/img1.jpg" alt="" />
+                    </a>
+                    <div class="top_right fl">
+                        <p>
+                            北京蒙娜丽莎摄影
+                        </p>
+                        <a href="javascript:;">
+                        </a>
+                    </div>
+                </div>
+                <div class="center">
+                	<div class="top_bg"></div>
+                    <div class="center_c">很美的，很不错，推荐大家去蒙那丽莎</div>
+                    <div class="bottom_bg"></div>
+                </div>
+                <div class="bottom">
+                	<div class="bottom_tit clearFix">
+                    	<p class="fl">TA 的粉丝(149771)</p>
+                        <a href="javascript:;" class="fr">全部>></a>
+                    </div>
+                    <ul class="clearFix">
+                    	<li class="fl">
+                        	<a href="javascript:;">
+                            	<img src="images/img2.jpg" alt="" />
+                                <p>站在城边</p>
+                            </a>
+                        </li>
+                        <li class="fl">
+                        	<a href="javascript:;">
+                            	<img src="images/img2.jpg" alt="" />
+                                <p>站在城边</p>
+                            </a>
+                        </li>
+                        <li class="fl">
+                        	<a href="javascript:;">
+                            	<img src="images/img2.jpg" alt="" />
+                                <p>站在城边</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footerbanne_right fl">
+            	<ul>
+                	<li>
+                    	<a href="javascript:;">新郎拍摄婚纱照注意事项</a>
+                    </li>
+                    <li>
+                    	<a href="javascript:;">新郎拍摄婚纱照注意事项</a>
+                    </li>
+                    <li>
+                    	<a href="javascript:;">新郎拍摄婚纱照注意事项</a>
+                    </li>
+                    <li>
+                    	<a href="javascript:;">新郎拍摄婚纱照注意事项</a>
+                    </li>
+                    <li>
+                    	<a href="javascript:;">新郎拍摄婚纱照注意事项</a>
+                    </li>
+                    <li>
+                    	<a href="javascript:;">新郎拍摄婚纱照注意事项</a>
+                    </li>
+                    <li>
+                    	<a href="javascript:;">新郎拍摄婚纱照注意事项</a>
+                    </li>
+                    <li>
+                    	<a href="javascript:;">新郎拍摄婚纱照注意事项</a>
+                    </li>
+                    <li>
+                    	<a href="javascript:;">新郎拍摄婚纱照注意事项</a>
+                    </li>
+                    <li>
+                    	<a href="javascript:;">新郎拍摄婚纱照注意事项</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="tit mb24 clearFix">
+        	<h2 class="fl titpic8">友情链接</h2>
+            <div class="subnav fr">
+            	<a href="javascript:;" class="fr">友情链接QQ:7878358115</a>
+            </div>
+        </div>
+        <div class="friendlink clearFix">
+        	<a href="javascript:;" class="fl">北京蒙娜丽莎婚纱摄影</a>
+            <a href="javascript:;" class="fl"> 北京婚纱摄影</a>
+            <a href="javascript:;" class="fl"> 北京妈妈网摄影</a>
+            <a href="javascript:;" class="fl"> 北京婚纱摄影</a>
+            <a href="javascript:;" class="fl">重庆婚纱摄影</a>
+            <a href="javascript:;" class="fl"> 北京婚纱摄影</a>
+            <a href="javascript:;" class="fl"> 秦皇岛婚纱摄影</a>
+            <a href="javascript:;" class="fl"> 北京婚纱摄影</a>
+            <a href="javascript:;" class="fl">  武汉婚纱摄影</a>
+        </div>
+    </div>
+    <div class="footer">
+    	<div class="footer_top">
+        	<div class="wrap clearFix">
+            	<ul class="fl clearFix">
+                	<li class="fl">
+                    	<h4><a href="javascript:;">蒙娜丽莎/主页</a></h4>
+                        <div class="ft_linklist">
+                        	<a href="javascript:;">北京婚纱摄影网</a>
+                            <a href="javascript:;">关于蒙娜丽莎</a>
+                            <a href="javascript:;">联系我们</a>
+                            <a href="javascript:;">婚纱客片分享网</a>
+                        </div>
+                    </li>
+                    <li class="fl">
+                    	<h4><a href="javascript:;">作品展示</a></h4>
+                        <div class="ft_linklist">
+                        	<a href="javascript:;">北京婚纱摄影网</a>
+                            <a href="javascript:;">关于蒙娜丽莎</a>
+                            <a href="javascript:;">联系我们</a>
+                            <a href="javascript:;">婚纱客片分享网</a>
+                        </div>
+                    </li>
+                    <li class="fl">
+                    	<h4><a href="javascript:;">场景介绍</a></h4>
+                        <div class="ft_linklist">
+                        	<a href="javascript:;">北京婚纱摄影网</a>
+                            <a href="javascript:;">关于蒙娜丽莎</a>
+                            <a href="javascript:;">联系我们</a>
+                            <a href="javascript:;">婚纱客片分享网</a>
+                        </div>
+                    </li>
+                    <li class="fl">
+                    	<h4><a href="javascript:;">新闻动态</a></h4>
+                        <div class="ft_linklist">
+                        	<a href="javascript:;">北京婚纱摄影网</a>
+                            <a href="javascript:;">关于蒙娜丽莎</a>
+                            <a href="javascript:;">联系我们</a>
+                            <a href="javascript:;">婚纱客片分享网</a>
+                        </div>
+                    </li>
+                </ul>
+                <div class="footer_top_right fl">
+                	<img src="images/foot_32.gif" alt="" />
+                    <div class="footer_top_right_pos clearFix">
+                    	<a href="javascript:;" class="footer_top_right_pos_pic1 fl"></a>
+                        <a href="javascript:;" class="footer_top_right_pos_pic2 fl"></a>
+                        <a href="javascript:;" class="footer_top_right_pos_pic3 fl"></a>
+                        <a href="javascript:;" class="footer_top_right_pos_pic4 fl"></a>
+                        <a href="javascript:;" class="footer_top_right_pos_pic4 fl"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    	<div class="footer_bottom">
+        	<div class="wrap">
+            	<div class="link clearFix">
+                	<a href="javascript:;" class="fl">北京婚纱摄影</a>
+                    <a href="javascript:;" class="fl"> | 婚纱照展</a>
+                    <a href="javascript:;" class="fl"> | 影楼报价</a>
+                    <a href="javascript:;" class="fl"> | 摄影动态</a>
+                    <a href="javascript:;" class="fl"> | 联系我们</a>
+                </div>
+                <p>版权所有 © 2007-2012 北京蒙娜丽莎摄影有限公司 Map | Tag</p>
+                <p>北京蒙娜丽莎唯一官网：http://www.mnls.com/ 京ICP备12018289号 京公网安备11010102001544号</p>
+                <p>热门推荐：北京婚纱摄影、北京婚纱影楼、婚纱照或婚纱摄影外景，尽在蒙娜丽莎！ 网站技术、SEO优化支持：东辉创想</p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

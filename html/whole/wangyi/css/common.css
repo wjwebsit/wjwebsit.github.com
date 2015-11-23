@@ -1,0 +1,22 @@
+@charset "utf-8";
+/* CSS Document */
+/*清楚默认样式*/
+body,div,p,ul,li,ol,dl,dt,dd,h1,h2,h3,h4,h5,h6,img,input,b,strong,em,i,span,a{margin:0; padding:0;}
+a{text-decoration:none;}
+input{border:none; background: none; outline:none;}
+textarea{outline:none; resize:none;}
+li{list-style:none;}
+b,strong{font-weight:normal;}
+em,i{font-style:normal;}
+img{display:block; border:none;}
+body{overflow-x:hidden; font-size:12px; font-family:'\5B8B\4F53",Arial,sans-serif'; color:#252525;}
+a{ color:#252525;}
+a:hover{color:#ba2636; text-decoration:underline;}
+
+
+/*通用*/
+.fl{float:left; display:inline;}
+.fr{float:right; display:inline;}
+.clearFix:after{content:''; clear:both; display:block;}
+.clearFix{zoom:1;}
+.wrap{width:960px; margin:0 auto;}

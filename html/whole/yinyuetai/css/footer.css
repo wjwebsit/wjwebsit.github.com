@@ -1,0 +1,7 @@
+@charset "utf-8";
+/* CSS Document */
+
+.footer{height:110px; background:#fff; text-align:center; padding-top:40px;font-size:12px;color:#999;}
+.footer p{margin-top:10px;}
+.footer_list{width:496px;margin:0 0 30px 245px; overflow:hidden;}
+.footer_list a {color:#666; padding:0 12px; border-left:1px dotted #333;  margin-left:-1px;}

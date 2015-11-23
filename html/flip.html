@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>智能社-http://www.zhinengshe.com</title>
+<style>
+*{ margin:0; padding:0; list-style:none;}
+html,body{ overflow:hidden; height:100%; width:100%; background:url(../images/works/html/bg1.jpg) no-repeat; background-size:cover; }
+
+.wrap{ width:500px; height:350px; margin:150px auto; background:url(../images/works/html/bz0.jpg) no-repeat; position:relative; cursor:pointer; box-shadow:0 0 30px 10px #fff; }
+#page{ width:50%; position:absolute; right:0; top:0; height:100%; transition:1s all ease; transform-origin:left center; transform-style:preserve-3d; z-index:2; }
+#page div{ width:100%; height:100%; position:absolute; left:0; top:0;}
+#page div.front{ background:url(../images/works/html/bz0.jpg) no-repeat right 0; z-index:2; backface-visibility:hidden;}
+#page div.back{ background:url(../images/works/html/bz1.jpg) no-repeat left top; z-index:1; transform:scale(-1,1);}
+
+#page2{ width:50%; height:100%; position:absolute; right:0; top:0; background:url(../images/works/html/bz1.jpg) no-repeat right 0; z-index:1;}
+
+/*body:active #page{ transform:rotateY(-180deg);}
+*/</style>
+<script>
+window.onload=function(){
+	var oWrap=document.querySelector('.wrap');	
+	var oPage=document.querySelector('#page');
+	var oPage2=document.querySelector('#page2');
+	var oFront=document.querySelector('#page .front');
+	var oBack=document.querySelector('#page .back');
+	var iNow=0;
+	
+	var bReady=true;
+	
+	oWrap.onclick=function(){
+		if(bReady==false)return;
+		bReady=false;
+		iNow++;
+		oPage.style.transition='1s all ease';
+		oPage.style.transform='perspective(800px) rotateY(-180deg)';	
+	};
+	
+	
+	oPage.addEventListener('transitionend',function(){
+		bReady=true;
+		oPage.style.transition='none';
+		oPage.style.transform='perspective(800px) rotateY(0deg)';
+		
+		//换图
+		oWrap.style.backgroundImage='url(../images/works/html/bz'+iNow%4+'.jpg)';
+		oFront.style.backgroundImage='url(../images/works/html/bz'+iNow%4+'.jpg)';
+		
+		oBack.style.backgroundImage='url(../images/works/html/bz'+(iNow+1)%4+'.jpg)';
+		oPage2.style.backgroundImage='url(../images/works/html/bz'+(iNow+1)%4+'.jpg)';
+	},false);
+};
+</script>
+</head>
+
+<body>
+<div class="wrap">
+	<div id="page">
+    	<div class="front"></div>
+        <div class="back"></div>
+    </div>
+    <div id="page2"></div>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
