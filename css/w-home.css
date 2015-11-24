@@ -4,10 +4,20 @@
 html,body{ height:100%; overflow:hidden; }
 .box{ height:100%; width:100%; margin:0 auto; position:relative; }
 
-.box .mask{ width:100%; height:100%; background:#fff; position:absolute; left:0; top:0; z-index:40; } 
-.box .mask h1{ background:url(../images/logo.png) no-repeat; width:340px; height:80px; position:absolute; left:50px; top:50px; }
-.box .mask ul{ position:absolute; left:50%; margin-left:-300px; top:50%; margin-top:-40px; width:600px; height:80px; }
-.box .mask ul li{ float:left; margin-right:10px; }
+@-webkit-keyframes hide{
+	to{ opacity:0; }	
+}
+@-moz-keyframes hide{
+	to{ opacity:0; }	
+}
+@-ms-keyframes hide{
+	to{ opacity:0; }	
+}
+
+#mask{ width:100%; height:100%; background:#fff; position:absolute; left:0; top:0; z-index:40; -webkit-animation:3s hide linear 3s; -moz-animation:3s hide linear 3s;-ms-animation:3s hide linear 3s;} 
+#mask h1{ background:url(../images/logo.png) no-repeat; width:340px; height:80px; position:absolute; left:50px; top:50px; }
+#mask ul{ position:absolute; left:50%; margin-left:-300px; top:50%; margin-top:-40px; width:600px; height:80px; }
+#mask ul li{ float:left; margin-right:10px; }
 
 
 /*---主内容部分---*/
@@ -17,8 +27,20 @@ html,body{ height:100%; overflow:hidden; }
 @-webkit-keyframes come2{
 	to{ height:100%; }	
 }
-.box .box-left{ width:0; height:100%; position:relative; z-index:2; -webkit-animation:1s come ease-in-out forwards 2s; }
-.box .box-right{width:50%; height:0;  position:relative; z-index:2; -webkit-animation:1s come2 ease-out forwards 2s; }
+@-moz-keyframes come{
+	to{ width:50%; }	
+}
+@-moz-keyframes come2{
+	to{ height:100%; }	
+}
+@-ms-keyframes come{
+	to{ width:50%; }	
+}
+@-ms-keyframes come2{
+	to{ height:100%; }	
+}
+.box .box-left{ width:0; height:100%; position:relative; z-index:2; -webkit-animation:1s come ease-in-out forwards 2s; -moz-animation:1s come ease-in-out forwards 2s; -ms-animation:1s come ease-in-out forwards 2s;}
+.box .box-right{width:50%; height:0;  position:relative; z-index:2; -webkit-animation:1s come2 ease-out forwards 2s; -moz-animation:1s come2 ease-out forwards 2s;-ms-animation:1s come2 ease-out forwards 2s;}
 .box-left .positive{ width:100%; height:100%; }
 .box-left .positive ul{ width:100%; height:100%; }
 .box-left .positive ul li{ width:100%; height:100%; }
@@ -73,7 +95,17 @@ html,body{ height:100%; overflow:hidden; }
 	50%{ opacity:.5; transform:rotate(180deg) scale(1.5);}
 	100%{ opacity:1; transform:rotate(360deg) scale(1); } 
 }
-.box .time{ opacity:0; width:564px; height:568px; position:fixed; left:50%; margin-left:-282px; top:10px; z-index:16; background:url(../images/commonSprites.png) no-repeat -28px -32px; -webkit-animation:1.5s round ease-in forwards 2s; } 
+@-moz-keyframes round{
+	0%{ opacity:0; transform:rotate(0deg) scale(0.5);}	
+	50%{ opacity:.5; transform:rotate(180deg) scale(1.5);}
+	100%{ opacity:1; transform:rotate(360deg) scale(1); } 
+}
+@-ms-keyframes round{
+	0%{ opacity:0; transform:rotate(0deg) scale(0.5);}	
+	50%{ opacity:.5; transform:rotate(180deg) scale(1.5);}
+	100%{ opacity:1; transform:rotate(360deg) scale(1); } 
+}
+.box .time{ opacity:0; width:564px; height:568px; position:fixed; left:50%; margin-left:-282px; top:10px; z-index:16; background:url(../images/commonSprites.png) no-repeat -28px -32px; -webkit-animation:1.5s round ease-in forwards 2s; -moz-animation:1.5s round ease-in forwards 2s; -ms-animation:1.5s round ease-in forwards 2s;} 
 
 /*---时针---*/
 
@@ -91,7 +123,7 @@ html,body{ height:100%; overflow:hidden; }
 .time .exhibition .Carousel{ width:300px; height:250px; position:absolute; left:50%; margin-left:-150px; top:50%; margin-top:-110px; overflow:hidden; }
 .time .exhibition .Carousel ul{ width:1800px; height:250px; position:absolute; left:0; top:0; transition:1s all ease; }
 .Carousel ul li{ width:300px; height:250px; float:left; text-align:center; }
-.Carousel ul li a{ display:block; width:300px; height:200px; margin-bottom:20px; }
+.Carousel ul li a{ display:block; width:300px; height:200px; margin-bottom:10px; }
 .Carousel ul li .bg1{ background:#f2f3f7; display:block; width:300px; height:200px; }
 .Carousel ul li img{ width:300px; height:200px; }
 .Carousel ul li strong{ font-size:30px; font-weight:bold; color:#333; }
