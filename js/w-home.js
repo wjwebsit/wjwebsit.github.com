@@ -53,7 +53,9 @@ window.onload=function (){
 	
 	//改变h2的字
 	var oLtit=document.querySelector('.positive .instruction h2');
-	var oRtit=document.querySelector('.reverse .instruction h2');	
+	var oLbtn=document.querySelector('.positive .instruction a');
+	var oRtit=document.querySelector('.reverse .instruction h2');
+	var oRbtn=document.querySelector('.reverse .instruction a');	
 	var arr=[
 		{'name':'ABOUT','href':'./html/about.html'},
 		{'name':'WORKS','href':'./html/w-works.html'},
@@ -78,6 +80,7 @@ window.onload=function (){
 		}
 		aLi[iNow].className='active';
 		oLtit.innerHTML=arr[iNow].name;
+		oLbtn.href=arr[iNow].href;
 		aA1[iNow].href=arr[iNow].href;
 		iNow++;
 		if(iNow==aLi.length)
@@ -101,6 +104,7 @@ window.onload=function (){
 		}
 		aLi2[iNow2].className='active';
 		oRtit.innerHTML=arr2[iNow2].name;
+		oRbtn.href=arr2[iNow2].href;
 		aA2[iNow2].href=arr2[iNow2].href;
 		iNow2++;
 		if(iNow2==aLi2.length)
