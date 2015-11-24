@@ -7,9 +7,9 @@ window.onload=function (){
 	//首页消失
 	var oMask=document.getElementById('mask');
 	var oAnimate=document.getElementById('animate');
-	oAnimate.addEventListener('animationend',function (){
+	setTimeout(function (){
 		oMask.style.display='none';	
-	},false);
+	},1500);
 	
 	
 	//时钟
