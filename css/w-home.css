@@ -14,7 +14,7 @@ html,body{ height:100%; overflow:hidden; }
 	to{ opacity:0; }	
 }
 
-#mask{ width:100%; height:100%; background:#fff; position:absolute; left:0; top:0; z-index:40; -webkit-animation:3s hide linear 3s; -moz-animation:3s hide linear 3s;-ms-animation:3s hide linear 3s;} 
+#mask{ width:100%; height:100%; background:#fff; position:absolute; left:0; top:0; z-index:40; -webkit-animation:3s hide linear; -moz-animation:3s hide linear;-ms-animation:3s hide linear;} 
 #mask h1{ background:url(../images/logo.png) no-repeat; width:340px; height:80px; position:absolute; left:50px; top:50px; }
 #mask ul{ position:absolute; left:50%; margin-left:-300px; top:50%; margin-top:-40px; width:600px; height:80px; }
 #mask ul li{ float:left; margin-right:10px; }
